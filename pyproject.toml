@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "userhandler"
+version = "0.1.0"
+description = ""
+authors = ["BigBlackBob-93 <101857203+BigBlackBob-93@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.0"
+aiohttp = "^3.10.5"
+uvicorn = "^0.30.6"
+httpx = "^0.27.2"
+pytest-asyncio = "^0.24.0"
+pytest = "^8.3.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

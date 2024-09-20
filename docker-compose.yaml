@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  app:
+    container_name: handler
+    build:
+      context: .
+    command:
+      - sh
+      - -xec
+      - |
+        uvicorn app.main:fastapi_app --reload --workers 1 --host 0.0.0.0 --port 8000
+    working_dir: /api/
+    volumes:
+      - .:/api/
+    ports:
+      - "8300:8000"
